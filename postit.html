@@ -1,0 +1,115 @@
+<!-- Post It Application -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post It</title>
+
+    <!-- Connect the CSS file -->
+    <link rel="stylesheet" href="postit.css">
+
+    <!-- Add CryptoJS for encryption -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Application title -->
+        <h1>POST IT</h1>
+        <p class="subtitle">Create and Encrypt Your Posts</p>
+
+
+        <!-- User information section -->
+        <div id="userSection">
+
+            <h2>User Information</h2>
+
+            <input 
+                type="text" 
+                id="fullname" 
+                placeholder="Full Name" 
+            >
+
+            <input 
+                type="date" 
+                id="birthday" 
+            >
+
+            <input 
+                type="text" 
+                id="yearlevel" 
+                placeholder="Year Level" 
+            >
+
+            <input 
+                type="text" 
+                id="gender" 
+                placeholder="Gender" 
+            >
+
+            <input 
+                type="text" 
+                id="username" 
+                placeholder="Username" 
+            >
+
+            <input 
+                type="password" 
+                id="password" 
+                placeholder="Password" 
+            >
+
+            <!-- Continue to the post section -->
+            <button onclick="saveUser()"> 
+                Continue 
+            </button>
+
+        </div>
+
+
+        <!-- Post creation section -->
+        <div id="postSection" class="hidden">
+
+            <h2>Create a Post</h2>
+
+            <textarea 
+                id="post" 
+                placeholder="Write your caption..." 
+            ></textarea>
+
+            <!-- Submit the post -->
+            <button onclick="addPost()"> 
+                POST 
+            </button>
+
+        </div>
+
+
+        <!-- Show messages to the user -->
+        <p id="message"></p>
+
+
+        <!-- Display all posts -->
+        <div class="thread">
+
+            <h2>Post Thread</h2>
+
+            <div id="posts"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Connect the JavaScript file -->
+    <script src="postit.js"></script>
+
+</body>
+
+</html>

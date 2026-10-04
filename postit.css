@@ -1,0 +1,164 @@
+/* Post It CSS */
+body {
+    font-family: "Arial Black", Arial, sans-serif;
+    background: #045133;
+    color: #ffffff;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    background: #050505;
+    padding: 28px;
+    border-radius: 16px;
+    border: 1px solid #021814;
+    box-shadow: 0 0 25px rgba(8, 111, 77, 0.18);
+}
+
+h1 {
+    text-align: center;
+    color: #0a9466;
+    margin-bottom: 5px;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #119b3c;
+    margin-bottom: 28px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #0a9466;
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    margin-bottom: 12px;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #119b3c;
+    box-shadow: 0 0 10px rgba(17, 155, 60, 0.3);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #045133;
+    color: #ffffff;
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #045133;
+    color: #000000;
+    box-shadow: 0 0 18px rgba(4, 81, 51, 0.5);
+    transform: translateY(-1px);
+}
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    color: #045133;
+    margin: 18px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.thread {
+    margin-top: 28px;
+}
+
+.post-card {
+    border: 1px solid #333333;
+    border-left: 5px solid #045133;
+    border-radius: 10px;
+    padding: 17px;
+    margin-bottom: 15px;
+    background-color: #161616;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.original-title {
+    font-weight: 900;
+    color: #106a48;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.original-content {
+    padding: 13px;
+    background-color: #0d0d0d;
+    border: 1px solid #333333;
+    border-radius: 7px;
+    margin-bottom: 14px;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.encrypted-title {
+    font-weight: 900;
+    color: #f3f6f5;
+    margin-bottom: 7px;
+    letter-spacing: 1px;
+}
+
+.encrypted-content {
+    background-color: #090909;
+    padding: 13px;
+    border: 1px solid #3a3a3a;
+    border-radius: 7px;
+    word-break: break-all;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fcfefe;
+    line-height: 1.5;
+}
